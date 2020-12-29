@@ -1,5 +1,9 @@
 body {
   font-family: "Raleway", sans-serif;
+  margin-top: ;
+  margin-bottom: ;
+  margin-left: 35px;
+  margin-right: ;
 }
 h1 {
   font-size: x-large;
@@ -23,39 +27,67 @@ p {
   width: 130px;
   padding: 40px 0px 0px;
 }
-li {
-  display: inline-flex;
-}
-ul {
-  list-style-type: none;
-}
+
 form {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .icone {
   border: solid #f2f2f2;
   background-color: #f2f2f2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  height: 50px;
+  align-items: center;
 }
 ::placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
+  height: 50px;
 }
 .submit {
-  border: solid;
+  border: none;
   background-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 50px;
 }
 .filtres {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: solid 3px black;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 60%;
 }
-.filtre {
-  border: black solid 2px;
+
+.eco,
+.famil,
+.romantique,
+.pet {
+  display: flex;
+  border: solid 2px #f2f2f2;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.txt-filtre {
+  font-weight: bold;
+}
+
+.logo-filtre {
+  border: none;
+  background-color: #deebfd;
+  border-radius: 20px;
 }

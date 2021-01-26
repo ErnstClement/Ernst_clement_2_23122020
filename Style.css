@@ -1,16 +1,60 @@
 body {
   font-family: "Raleway", sans-serif;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 0px;
 }
+
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 h1 {
   font-size: x-large;
 }
 
-p {
-  font-size: 15px;
+ul {
+  list-style-type: none;
 }
 
+li {
+  display: block;
+  float: left;
+  padding: 35px;
+  font-size: 18px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.btn-filtre:hover {
+  color: #0065fc;
+}
+
+.headnav li {
+  border-top: solid 3px transparent;
+  display: block;
+}
+
+.headnav li:hover {
+  border-top: #0065fc 3px solid;
+}
 .logo {
   display: flex;
   flex-direction: row;
@@ -18,9 +62,9 @@ p {
 }
 .header {
   display: flex;
+  font-size: 15px;
   width: 30%;
   justify-content: space-around;
-  padding: 60px 0px 0px;
   outline: none;
 }
 .reservia {
@@ -35,63 +79,75 @@ form {
   align-items: center;
 }
 
+.recherche {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .row {
   display: flex;
   height: 50px;
   width: 66.66%;
 }
 .icone {
-  border: solid #f2f2f2;
+  border: none;
   background-color: #f2f2f2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   width: 50px;
-  padding-left: 15px;
-}
-.location {
-  padding-top: 10px;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
 }
 
 .search {
-  padding: 0px 0px 0px 25px;
-  height: 48px;
+  padding-left: 15px;
+  padding-right: 40px;
+  height: 46px;
   border: solid 1px #f2f2f2;
+  width: 150px;
 }
 
 ::placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  font-size: 19px;
   color: black;
   opacity: 1;
-  font-size: 17px;
 }
+
 .submit {
   border: none;
   background-color: #0065fc;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  font-size: 19px;
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .filtres {
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 30px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  font-size: 20px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
 }
 
-.eco,
-.famil,
-.romantique,
-.pet {
+.btn-filtre {
   display: flex;
   border: solid #f2f2f2 2px;
+  color: black;
   border-left: none;
   border-radius: 25px;
   align-items: center;
@@ -101,7 +157,7 @@ form {
 
 .txt-filtre {
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 .logo-filtre {
@@ -116,7 +172,8 @@ form {
 }
 
 .résultat {
-  width: 30%;
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   align-items: center;
   margin-top: 40px;
@@ -129,7 +186,366 @@ form {
   border-radius: 25px;
   height: 25px;
   width: 25px;
-  padding-left: 17px;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  text-align: center;
+  justify-content: center;
+}
+
+.hebergement-populaire {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  padding-top: 25px;
+}
+
+.section-gauche {
+  border-radius: 25px;
+  width: 70%;
+  background-color: #f2f2f2;
+}
+
+.titre-section-gauche {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.miniaturesgauche {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  row-gap: 35px;
+  column-gap: 25px;
+}
+
+.miniaturesgauche > * {
+  flex: 0 0 30%;
+}
+
+.miniature {
+  border: none;
+  background-color: white;
+  padding: 6px;
+  border-radius: 25px;
+  width: 100%;
+  height: 250px;
+}
+
+.miniature img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.info {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.info p {
+  padding-top: 5px;
+}
+
+.notations {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.info .notations {
+  padding-top: 8px;
+}
+
+.star {
+  color: #0065fc;
+  display: flex;
+}
+
+.nostar {
+  color: #f2f2f2;
+  display: flex;
+}
+
+.more {
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.section-droite {
+  border: none;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  margin-left: 50px;
+  width: 30%;
+}
+
+.titre-section-droite {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.miniaturesdroite {
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  padding-top: 5px;
+  flex-direction: row;
+  padding-bottom: 5px;
+  width: 420px;
+  height: 200px;
+}
+
+.miniaturesdroite img {
+  width: 150px;
+  overflow: hidden;
+  object-fit: cover;
+  padding-left: 5px;
+  padding-right: 25px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.info-droite {
+  padding-top: 15px;
+}
+
+.info-droite h3 {
+  padding-bottom: 10px;
+}
+
+.info-droite p {
+  padding-bottom: 10px;
+}
+
+.info-droite .notations {
+  padding-top: 55px;
+}
+
+/* style activités à Marseille*/
+
+.activity {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.activity-box {
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.row-pic {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.column-1 {
+  display: flex;
+  width: 22%;
+}
+
+.column-1 img {
+  height: 90%;
+  object-fit: cover;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+
+.top-pic {
+  flex-direction: column;
+  height: 50%;
+  margin-bottom: 45px;
+}
+
+.top-pic img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.activity-box h3 {
+  border-top: none;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  box-shadow: 0 0 20px #0000002e;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bot-pic {
+  height: 40%;
+}
+
+.bot-pic img {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.bot-pic h3 {
+}
+.activity-box h3 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.foot {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f2f2f2;
+  background-repeat: repeat-y;
+  margin-top: 50px;
+  display: flex;
+}
+
+footer {
+  background-color: #f2f2f2;
+  background-repeat: repeat-y;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.footer li {
+  padding: 5px;
+  float: initial;
+}
+
+.footer {
+  padding-left: 0px;
+}
+
+.left {
+  margin-right: 450px;
+}
+
+.middle {
+  margin-right: 450px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0px;
+  }
+
+  .logo {
+    display: block;
+  }
+  .recherche {
+    width: 100%;
+  }
+
+  .filtres {
+    display: block;
+  }
+
+  .hebergement-populaire {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .section-gauche {
+    width: 100%;
+  }
+
+  .miniaturesgauche {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .miniature {
+    width: 363px;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin-left: 0px;
+    width: 375px;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+  }
+
+  .column-2 {
+    width: 95%;
+    margin: auto;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 }

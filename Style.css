@@ -13,14 +13,18 @@ h1 {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
 }
 
 li {
-  display: block;
-  float: left;
   padding: 35px;
   font-size: 18px;
+}
+
+ul li {
+  display: inline;
 }
 
 h3 {
@@ -34,27 +38,38 @@ p {
   margin-bottom: 5px;
 }
 
-a:link {
-  text-decoration: none;
+a {
   color: black;
 }
 
-a:visited {
-  color: black;
+a:link {
+  text-decoration: none;
+  color: #0065fc;
+}
+
+.nav-blue {
+  color: #0065fc;
 }
 
 .btn-filtre:hover {
   color: #0065fc;
 }
 
+.header ul {
+  display: flex;
+  flex-direction: row;
+}
+
 .headnav li {
   border-top: solid 3px transparent;
-  display: block;
+  display: flex;
+  color: #0065fc;
 }
 
 .headnav li:hover {
   border-top: #0065fc 3px solid;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -68,7 +83,8 @@ a:visited {
   outline: none;
 }
 .reservia {
-  width: 130px;
+  width: 10%;
+  height: 10%;
   padding: 40px 0px 0px;
 }
 
@@ -131,13 +147,18 @@ form {
   padding-right: 15px;
 }
 .filtres {
+  display: flex;
+  align-items: center;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 30px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  align-items: center;
+}
+
+.filtre-main {
+  padding-left: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -171,7 +192,7 @@ form {
   width: 50px;
 }
 
-.résultat {
+.resultat {
   margin-left: 50px;
   margin-right: 50px;
   display: flex;
@@ -350,16 +371,18 @@ form {
   justify-content: space-between;
   overflow: hidden;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 .row-pic {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 25px;
   overflow: hidden;
   object-fit: cover;
+  box-shadow: 0 0 20px #0000002e;
 }
 
 .column-1 {
+  height: 95%;
   display: flex;
   width: 22%;
 }
@@ -370,15 +393,18 @@ form {
 }
 
 .column-2 {
+  height: 95%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 22%;
 }
 
 .top-pic {
+  border-radius: 25px;
   flex-direction: column;
   height: 50%;
-  margin-bottom: 45px;
+  box-shadow: 0 0 20px #0000002e;
 }
 
 .top-pic img {
@@ -395,29 +421,27 @@ form {
   border-bottom: transparent;
   border-left: transparent;
   border-right: transparent;
-  box-shadow: 0 0 20px #0000002e;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .bot-pic {
+  border-radius: 25px;
+  flex-direction: column;
   height: 40%;
+  box-shadow: 0 0 20px #0000002e;
 }
 
 .bot-pic img {
   width: 100%;
-  height: 80%;
+  height: 75%;
   overflow: hidden;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-
-.bot-pic h3 {
-}
-.activity-box h3 {
-  padding-left: 20px;
-  padding-top: 20px;
 }
 
 .foot {
@@ -427,6 +451,8 @@ form {
   background-repeat: repeat-y;
   margin-top: 50px;
   display: flex;
+  width: 75%;
+  justify-content: space-between;
 }
 
 footer {
@@ -434,24 +460,14 @@ footer {
   background-repeat: repeat-y;
   margin-top: 50px;
   display: flex;
-  width: 100%;
 }
 
 .footer li {
-  padding: 5px;
-  float: initial;
+  padding: 10px;
 }
 
 .footer {
   padding-left: 0px;
-}
-
-.left {
-  margin-right: 450px;
-}
-
-.middle {
-  margin-right: 450px;
 }
 
 @media screen and (max-width: 375px) {
@@ -459,6 +475,60 @@ footer {
     margin: 0px;
   }
 
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .headnav li {
+    border-bottom: solid 3px transparent;
+    display: block;
+  }
+
+  .headnav li:hover {
+    border-bottom: #0065fc 3px solid;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .recherche {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .filtres {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
   .logo {
     display: block;
   }
@@ -466,17 +536,33 @@ footer {
     width: 100%;
   }
 
-  .filtres {
-    display: block;
+  .btn-filtre {
+    margin-top: 20px;
   }
 
   .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
   }
   .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
     width: 100%;
+  }
+
+  .titre-section-gauche {
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    box-shadow: 0 0 20px #0000002e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 
   .miniaturesgauche {
@@ -487,6 +573,7 @@ footer {
 
   .miniature {
     width: 363px;
+    padding-bottom: 20px;
   }
 
   .section-droite {
@@ -518,6 +605,12 @@ footer {
     padding-left: 15px;
   }
 
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
   .activity-box {
     height: auto;
     flex-direction: column;
@@ -526,11 +619,13 @@ footer {
   .column-1 {
     width: 95%;
     margin: auto;
+    margin-bottom: 25px;
   }
 
   .column-2 {
     width: 95%;
     margin: auto;
+    margin-bottom: 25px;
   }
 
   .row-pic {
@@ -547,5 +642,214 @@ footer {
     width: 100%;
     height: 200px;
     object-fit: cover;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  body {
+    margin: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .headnav li {
+    border-bottom: solid 3px transparent;
+    display: block;
+  }
+
+  .headnav li:hover {
+    border-bottom: #0065fc 3px solid;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .recherche {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .filtres {
+    display: flex;
+    width: 40%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .btn-filtre {
+    margin-top: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+  .logo {
+    display: block;
+  }
+  .recherche {
+    width: 100%;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    box-shadow: 0 0 20px #0000002e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .miniaturesgauche > * {
+    flex: 0 0 48%;
+  }
+
+  .miniature {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .miniaturesdroite img {
+    width: 50%;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .column-2 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .right {
+    margin-right: 15px;
   }
 }

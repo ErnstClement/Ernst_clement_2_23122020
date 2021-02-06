@@ -1,0 +1,965 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+}
+
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+li {
+  padding: 35px;
+  font-size: 18px;
+}
+
+ul li {
+  display: inline;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-i,
+.nav-h {
+  color: #0065fc;
+}
+
+.btn-filtre:hover {
+  color: #0065fc;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.headnav li {
+  border-top: solid 3px transparent;
+  display: flex;
+  color: #0065fc;
+}
+
+.headnav li:hover {
+  border-top: #0065fc 3px solid;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  font-size: 15px;
+  width: 30%;
+  justify-content: space-around;
+  outline: none;
+}
+.reservia {
+  width: 10%;
+  height: 10%;
+  padding: 40px 0px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recherche {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.row {
+  display: flex;
+  height: 50px;
+  width: 66.66%;
+}
+.icone {
+  border: none;
+  background-color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.search {
+  padding-left: 15px;
+  padding-right: 40px;
+  height: 46px;
+  border: solid 1px #f2f2f2;
+  width: 150px;
+}
+
+::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  color: black;
+  opacity: 1;
+}
+
+.submit {
+  border: none;
+  background-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.searchButton {
+  display: none;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.filtre-main {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.btn-filtre {
+  display: flex;
+  border: solid #f2f2f2 2px;
+  color: black;
+  border-left: none;
+  border-radius: 25px;
+  align-items: center;
+  height: 48px;
+  padding-right: 20px;
+}
+
+.txt-filtre {
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+.logo-filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #deebff;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+.resultat {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.i {
+  color: #0065fc;
+  margin-right: 25px;
+  border: #f2f2f2 solid 1px;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 5px 3px 5px;
+}
+
+.hebergement-populaire {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  padding-top: 25px;
+}
+
+.section-gauche {
+  border-radius: 25px;
+  width: 70%;
+  background-color: #f2f2f2;
+}
+
+.titre-section-gauche {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.miniaturesgauche {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  row-gap: 35px;
+  column-gap: 25px;
+}
+
+.miniaturesgauche > * {
+  flex: 0 0 30%;
+}
+
+.miniature {
+  border: none;
+  background-color: white;
+  padding: 6px;
+  border-radius: 25px;
+  width: 100%;
+  height: 250px;
+}
+
+.miniature img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.info {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.info p {
+  padding-top: 5px;
+}
+
+.notations {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.info .notations {
+  padding-top: 8px;
+}
+
+.star {
+  color: #0065fc;
+  display: flex;
+}
+
+.nostar {
+  color: #f2f2f2;
+  display: flex;
+}
+
+.more {
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.section-droite {
+  border: none;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  margin-left: 50px;
+  width: 30%;
+}
+
+.titre-section-droite {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.miniaturesdroite {
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  padding-top: 5px;
+  flex-direction: row;
+  padding-bottom: 5px;
+  width: 420px;
+  height: 200px;
+}
+
+.miniaturesdroite img {
+  width: 150px;
+  overflow: hidden;
+  object-fit: cover;
+  padding-left: 5px;
+  padding-right: 25px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.info-droite {
+  padding-top: 15px;
+}
+
+.info-droite h3 {
+  padding-bottom: 10px;
+}
+
+.info-droite p {
+  padding-bottom: 10px;
+}
+
+.info-droite .notations {
+  padding-top: 35px;
+}
+
+/* style activités à Marseille*/
+
+.activity {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.activity-box {
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 25px;
+  padding-top: 15px;
+}
+
+.row-pic {
+  border-radius: 25px;
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 0 0 20px #0000002e;
+}
+
+.column-1 {
+  height: 95%;
+  display: flex;
+  width: 22%;
+}
+
+.column-1 img {
+  height: 90%;
+  object-fit: cover;
+}
+
+.column-2 {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+}
+
+.top-pic {
+  border-radius: 25px;
+  flex-direction: column;
+  height: 50%;
+  box-shadow: 0 0 20px #0000002e;
+}
+
+.top-pic img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.activity-box h3 {
+  border-top: none;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.bot-pic {
+  border-radius: 25px;
+  flex-direction: column;
+  height: 40%;
+  box-shadow: 0 0 20px #0000002e;
+}
+
+.bot-pic img {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.foot {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f2f2f2;
+  background-repeat: repeat-y;
+  margin-top: 50px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #f2f2f2;
+  background-repeat: repeat-y;
+  margin-top: 50px;
+  display: flex;
+}
+
+.footer li {
+  padding: 10px;
+}
+
+.footer {
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .reservia {
+    width: 30%;
+    height: 30%;
+    padding-left: 15px;
+  }
+  .header {
+    width: 100%;
+  }
+
+  .headnav {
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 25px;
+  }
+
+  .nav-h {
+    color: #0065fc;
+  }
+
+  .nav-i {
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+
+  .headnav li:hover {
+    border-top: none;
+  }
+
+  .headnav li {
+    border-bottom: solid 3px #0065fc;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .row {
+    width: auto;
+  }
+
+  .search {
+    width: 180px;
+  }
+
+  .recherche {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .submit {
+    display: none;
+    border-radius: 15px;
+  }
+
+  .searchButton {
+    border: none;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+  }
+
+  .i {
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .filtre-main {
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .recherche {
+    width: 100%;
+  }
+
+  .btn-filtre {
+    margin-top: 20px;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .miniature {
+    width: 363px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #0000002e;
+    margin-bottom: 25px;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin-left: 0px;
+    width: 375px;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .column-2 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .bot-pic {
+    margin-top: 25px;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (width: 768px) {
+  body {
+    margin: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .reservia {
+    width: 30%;
+    height: 30%;
+  }
+
+  .headnav {
+    width: 100%;
+  }
+
+  .headnav li {
+    border-bottom: solid 3px transparent;
+    display: block;
+  }
+
+  .headnav li:hover {
+    border-bottom: #0065fc 3px solid;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .recherche {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 40%;
+  }
+
+  .filtre-main {
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .btn-filtre {
+    margin-top: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+  .logo {
+    display: block;
+  }
+  .recherche {
+    width: 100%;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .miniaturesgauche > * {
+    flex: 0 0 48%;
+  }
+
+  .miniature {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #0000002e;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .miniaturesdroite img {
+    width: 50%;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .top-pic {
+    margin-bottom: 25px;
+  }
+
+  .bot-pic {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .right {
+    margin-right: 15px;
+  }
+}

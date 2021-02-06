@@ -1,2 +1,4 @@
 # Reservia
- Projet P2
+
+Fichier .HTML + .CSS
+Site Réservia réalisé graçe à la maquette.

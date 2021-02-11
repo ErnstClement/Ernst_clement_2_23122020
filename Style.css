@@ -71,6 +71,18 @@ a:link {
   border-top: #0065fc 3px solid;
 }
 
+.signin {
+  color: #0065fc;
+  padding-top: 35px;
+  font-size: 18px;
+  margin-top: 15px;
+  border-top: solid 3px transparent;
+}
+
+.signin:hover {
+  border-top: #0065fc 3px solid;
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -320,20 +332,20 @@ form {
   padding-left: 50px;
   padding-top: 50px;
   padding-right: 50px;
+  padding-bottom: 25px;
 }
 
 .miniaturesdroite {
   border: none;
   background-color: white;
   border-radius: 25px;
-  margin-top: 25px;
-  margin-left: 50px;
+  margin: auto;
   margin-bottom: 25px;
   display: flex;
   padding-top: 5px;
   flex-direction: row;
   padding-bottom: 5px;
-  width: 420px;
+  width: 75%;
   height: 200px;
 }
 
@@ -500,9 +512,9 @@ footer {
   }
 
   .headnav {
+    width: 100%;
     margin-top: 0px;
     padding-left: 0px;
-    margin-left: 25px;
   }
 
   .nav-h {
@@ -515,18 +527,26 @@ footer {
     right: 30px;
     top: 70px;
   }
-
+  header ul {
+    justify-content: center;
+  }
   .headnav li:hover {
     border-top: none;
   }
 
-  .headnav li {
+  #.headnav li {
     border-bottom: solid 3px #0065fc;
   }
 
   li {
     display: block;
     float: left;
+  }
+
+  .signin {
+    position: absolute;
+    top: 15px;
+    right: 25px;
   }
 
   h1 {
@@ -548,8 +568,8 @@ footer {
   }
 
   .recherche {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 50px;
     width: 100%;
   }
@@ -642,6 +662,7 @@ footer {
     display: block;
     width: 100%;
     padding-left: 0px;
+    padding-right: 0px;
   }
 
   .miniature {
@@ -658,7 +679,7 @@ footer {
 
   .miniaturesdroite {
     margin-left: 0px;
-    width: 375px;
+    width: 100%;
   }
 
   footer {
@@ -961,5 +982,34 @@ footer {
 
   .right {
     margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .recherche {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .icone {
+    width: 20%;
+  }
+
+  .barre {
+    width: 45%;
+  }
+
+  .bouton {
+    width: 35%;
+  }
+
+  .miniature {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .headnav li {
+    padding: 30px;
   }
 }

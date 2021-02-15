@@ -79,6 +79,10 @@ a:link {
   border-top: solid 3px transparent;
 }
 
+.signin a {
+  color: #0065fc;
+}
+
 .signin:hover {
   border-top: #0065fc 3px solid;
 }
@@ -633,7 +637,8 @@ footer {
   }
 
   .recherche {
-    width: 100%;
+    width: 80%;
+    margin-left: 15px;
   }
 
   .btn-filtre {
@@ -688,6 +693,10 @@ footer {
   .miniaturesdroite {
     margin-left: 0px;
     width: 100%;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   footer {
@@ -762,6 +771,10 @@ footer {
 @media only screen and (width: 768px) {
   body {
     margin: 0px;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   header {
@@ -1013,8 +1026,12 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
   .recherche {
-    margin-left: 0px;
+    width: 80%;
+    margin-left: 15px;
     margin-right: 0px;
   }
 
@@ -1031,7 +1048,7 @@ footer {
   }
 
   .miniature {
-    width: 95%;
+    width: 90%;
     margin: auto;
     margin-bottom: 25px;
   }
@@ -1040,8 +1057,22 @@ footer {
     padding: 30px;
   }
 
+  .miniaturesdroite {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
   .miniaturesdroite img {
     width: 45%;
     padding-right: 15px;
+  }
+
+  .column-1 {
+    width: 90%;
+  }
+
+  .column-2 {
+    width: 90%;
   }
 }

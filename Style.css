@@ -530,11 +530,14 @@ footer {
   header ul {
     justify-content: center;
   }
-  .headnav li:hover {
+
+  .headnav li {
     border-top: none;
+    border-bottom: solid 3px #f2f2f2;
   }
 
-  #.headnav li {
+  .headnav li:hover {
+    border-top: none;
     border-bottom: solid 3px #0065fc;
   }
 
@@ -547,6 +550,10 @@ footer {
     position: absolute;
     top: 15px;
     right: 25px;
+  }
+
+  .signin a {
+    color: #0065fc;
   }
 
   h1 {
@@ -763,6 +770,10 @@ footer {
     margin-right: 15px;
   }
 
+  .header {
+    width: 100%;
+  }
+
   .reservia {
     width: 30%;
     height: 30%;
@@ -770,20 +781,37 @@ footer {
 
   .headnav {
     width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
   }
 
   .headnav li {
-    border-bottom: solid 3px transparent;
+    border-top: none;
     display: block;
+    font-size: 22px;
+    border-bottom: 3px solid #f2f2f2;
   }
 
   .headnav li:hover {
-    border-bottom: #0065fc 3px solid;
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
   }
 
   li {
     display: block;
     float: left;
+  }
+
+  .signin {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 25px;
+    color: #0065fc;
+  }
+
+  .signin a {
+    color: #0065fc;
   }
 
   h1 {
@@ -797,10 +825,10 @@ footer {
   }
 
   .recherche {
+    margin-right: 0px;
     margin-left: 15px;
-    margin-right: 15px;
     margin-top: 50px;
-    width: 100%;
+    width: 90%;
   }
 
   .filtres {
@@ -836,9 +864,6 @@ footer {
   .logo {
     display: block;
   }
-  .recherche {
-    width: 100%;
-  }
 
   .hebergement-populaire {
     margin-left: 0px;
@@ -855,6 +880,7 @@ footer {
   }
 
   .titre-section-gauche {
+    width: 80%;
     padding-left: 20px;
   }
 
@@ -865,10 +891,10 @@ footer {
   }
 
   .miniaturesgauche {
-    margin: auto;
     margin-bottom: 20px;
     width: 100%;
     padding-left: 0px;
+    padding-right: 0px;
   }
 
   .miniaturesgauche > * {
@@ -1011,5 +1037,10 @@ footer {
 
   .headnav li {
     padding: 30px;
+  }
+
+  .miniaturesdroite img {
+    width: 45%;
+    padding-right: 15px;
   }
 }

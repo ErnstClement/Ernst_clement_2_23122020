@@ -350,7 +350,7 @@ form {
 }
 
 .miniaturesdroite img {
-  width: 150px;
+  width: 55%;
   overflow: hidden;
   object-fit: cover;
   padding-left: 5px;
@@ -372,7 +372,7 @@ form {
 }
 
 .info-droite .notations {
-  padding-top: 35px;
+  padding-top: 15px;
 }
 
 /* style activités à Marseille*/
@@ -673,7 +673,8 @@ footer {
   }
 
   .miniature {
-    width: 363px;
+    width: 90%;
+    margin: auto;
     padding-bottom: 20px;
     box-shadow: 0 0 20px #0000002e;
     margin-bottom: 25px;

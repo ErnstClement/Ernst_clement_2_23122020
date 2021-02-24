@@ -1607,3 +1607,277 @@ footer {
     margin-right: 15px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .reservia {
+    width: 30%;
+    height: 30%;
+    padding-left: 15px;
+  }
+  .header {
+    width: 100%;
+  }
+
+  .headnav {
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+
+  .nav-h {
+    color: #0065fc;
+  }
+
+  .nav-i {
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+  header ul {
+    justify-content: center;
+  }
+
+  .headnav li {
+    border-top: none;
+    border-bottom: solid 3px #f2f2f2;
+  }
+
+  .headnav li:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  .signin {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+
+  .signin a {
+    color: #0065fc;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .row {
+    width: auto;
+  }
+
+  .search {
+    width: 180px;
+  }
+
+  .recherche {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .submit {
+    display: none;
+    border-radius: 15px;
+  }
+
+  .searchButton {
+    border: none;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+  }
+
+  .i {
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .filtre-main {
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .recherche {
+    width: 80%;
+    margin-left: 15px;
+  }
+
+  .btn-filtre {
+    margin-top: 20px;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .miniature {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #0000002e;
+    margin-bottom: 25px;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .column-2 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .bot-pic {
+    margin-top: 25px;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+}

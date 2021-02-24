@@ -375,10 +375,6 @@ form {
   padding-bottom: 10px;
 }
 
-.info-droite .notations {
-  padding-top: 15px;
-}
-
 /* style activités à Marseille*/
 
 .activity {
@@ -494,7 +490,7 @@ footer {
   padding-left: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 1400px) {
   body {
     margin: 0px;
   }
@@ -768,264 +764,7 @@ footer {
   }
 }
 
-@media only screen and (width: 768px) {
-  body {
-    margin: 0px;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .header {
-    width: 100%;
-  }
-
-  .reservia {
-    width: 30%;
-    height: 30%;
-  }
-
-  .headnav {
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-
-  .headnav li {
-    border-top: none;
-    display: block;
-    font-size: 22px;
-    border-bottom: 3px solid #f2f2f2;
-  }
-
-  .headnav li:hover {
-    border-top: none;
-    border-bottom: solid 3px #0065fc;
-  }
-
-  li {
-    display: block;
-    float: left;
-  }
-
-  .signin {
-    position: absolute;
-    top: 35px;
-    right: 40px;
-    font-size: 25px;
-    color: #0065fc;
-  }
-
-  .signin a {
-    color: #0065fc;
-  }
-
-  h1 {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  p {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .recherche {
-    margin-right: 0px;
-    margin-left: 15px;
-    margin-top: 50px;
-    width: 90%;
-  }
-
-  .filtres {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 40%;
-  }
-
-  .filtre-main {
-    padding-left: 0px;
-    width: 100%;
-    flex-wrap: wrap;
-    font-size: 15px;
-  }
-
-  .btn-filtre {
-    margin-top: 15px;
-  }
-
-  .resultat {
-    display: inline-flex;
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .resultat p {
-    margin-left: 0px;
-  }
-  .logo {
-    display: block;
-  }
-
-  .hebergement-populaire {
-    margin-left: 0px;
-    margin-right: 0px;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-  .section-gauche {
-    border: transparent;
-    border-color: transparent;
-    background-color: white;
-    width: 100%;
-  }
-
-  .titre-section-gauche {
-    width: 80%;
-    padding-left: 20px;
-  }
-
-  .info {
-    border: transparent;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-
-  .miniaturesgauche {
-    margin-bottom: 20px;
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .miniaturesgauche > * {
-    flex: 0 0 48%;
-  }
-
-  .miniature {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0 0 20px #0000002e;
-  }
-
-  .section-droite {
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  .miniaturesdroite {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 80%;
-  }
-
-  .miniaturesdroite img {
-    width: 50%;
-  }
-
-  footer {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .left {
-    margin-right: 0px;
-    padding-left: 15px;
-  }
-
-  .middle {
-    margin-right: 0px;
-    padding-left: 15px;
-  }
-
-  .right {
-    padding-left: 15px;
-  }
-
-  .activity {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-  }
-
-  .activity-box {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .column-1 {
-    width: 95%;
-    margin: auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
-  }
-
-  .column-2 {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
-  }
-
-  .row-pic {
-    width: 100%;
-  }
-
-  .column-1 img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .column-2 img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .top-pic {
-    margin-bottom: 25px;
-  }
-
-  .bot-pic {
-    display: flex;
-    margin-top: 25px;
-  }
-
-  footer {
-    margin-top: 0px;
-  }
-
-  .foot {
-    margin-left: 0px;
-    margin-right: 0px;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .right {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     width: 100%;
   }
@@ -1351,7 +1090,7 @@ footer {
   }
 }
 
-@media only screen and (width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
   body {
     margin: 0px;
   }
@@ -1488,6 +1227,7 @@ footer {
   }
 
   .miniaturesgauche {
+    display: flex;
     margin-bottom: 20px;
     width: 100%;
     padding-left: 0px;
@@ -1879,5 +1619,519 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     flex-direction: column;
+  }
+}
+
+@media only screen and (width: 768 px) {
+  body {
+    margin: 0px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .reservia {
+    width: 30%;
+    height: 30%;
+  }
+
+  .headnav {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .headnav li {
+    border-top: none;
+    display: block;
+    font-size: 22px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .headnav li:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  .signin {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 25px;
+    color: #0065fc;
+  }
+
+  .signin a {
+    color: #0065fc;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .recherche {
+    margin-right: 0px;
+    margin-left: 15px;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 40%;
+  }
+
+  .filtre-main {
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .btn-filtre {
+    margin-top: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+  .logo {
+    display: block;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    width: 80%;
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .miniaturesgauche > * {
+    flex: 0 0 48%;
+  }
+
+  .miniature {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #0000002e;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .miniaturesdroite img {
+    width: 50%;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .top-pic {
+    margin-bottom: 25px;
+  }
+
+  .bot-pic {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .right {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (width: 834px) {
+  body {
+    margin: 0px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .reservia {
+    width: 30%;
+    height: 30%;
+  }
+
+  .headnav {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .headnav li {
+    border-top: none;
+    display: block;
+    font-size: 22px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .headnav li:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  .signin {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 25px;
+    color: #0065fc;
+  }
+
+  .signin a {
+    color: #0065fc;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .recherche {
+    margin-right: 0px;
+    margin-left: 15px;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 40%;
+  }
+
+  .filtre-main {
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .btn-filtre {
+    margin-top: 15px;
+  }
+
+  .resultat {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .resultat p {
+    margin-left: 0px;
+  }
+  .logo {
+    display: block;
+  }
+
+  .hebergement-populaire {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .section-gauche {
+    border: transparent;
+    border-color: transparent;
+    background-color: white;
+    width: 100%;
+  }
+
+  .titre-section-gauche {
+    width: 80%;
+    padding-left: 20px;
+  }
+
+  .info {
+    border: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .miniaturesgauche {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .miniaturesgauche > * {
+    flex: 0 0 48%;
+  }
+
+  .miniature {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #0000002e;
+  }
+
+  .section-droite {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .miniaturesdroite {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .miniaturesdroite img {
+    width: 50%;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .middle {
+    margin-right: 0px;
+    padding-left: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+
+  .activity {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .row-pic {
+    width: 100%;
+  }
+
+  .column-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .column-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .top-pic {
+    margin-bottom: 25px;
+  }
+
+  .bot-pic {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+
+  .foot {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .right {
+    margin-right: 15px;
   }
 }
